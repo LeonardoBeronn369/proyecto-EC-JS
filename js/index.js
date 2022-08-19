@@ -90,3 +90,4 @@ boton.addEventListener('click', () => {
   contador++;
   parrafo.textContent = contador;
 })
+
