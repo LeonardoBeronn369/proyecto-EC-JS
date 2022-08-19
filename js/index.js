@@ -67,6 +67,26 @@ function cambiarTitulos() {
 
 function otraLista() {
   const lista = document.getElementById("lista")
-  lista.innerHTML = "<li>Ojotas</li><li>short</li><li>Malla de Baño</li><li>Muscolosa</li>"
+  lista.innerHTML = "<li>Ojotas</li><li>short</li><li>Mallas de Baño</li><li>Muscolosas</li>"
 } 
 
+
+document.addEventListener("keydown", precionaEnter)
+
+function precionaEnter(event) {
+   const tecla = event.key;
+   
+   if(tecla == "Enter") {
+    otraLista()
+   }
+}
+
+const parrafo = document.querySelector("p");
+const boton = document.querySelector("button");
+
+let contador = 0;
+
+boton.addEventListener('click', () => {
+  contador++;
+  parrafo.textContent = contador;
+})

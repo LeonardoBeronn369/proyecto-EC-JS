@@ -239,3 +239,12 @@ s {
     font-size: 18px;
     letter-spacing: 8px;
 }
+
+span{
+  color: #48cae4;
+}
+
+.sumando{
+  margin-bottom: 4rem;
+  text-align: center;
+}
